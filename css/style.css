@@ -1,0 +1,143 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgrey;
+}
+
+/* Nav-menu */
+#header-top {
+    background-color: #D83535;
+}
+.navbar {
+    width: 100%;   
+}
+.nav-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-item ul {
+    position: absolute;
+    min-width: 150px;
+    background-color: #D83535;
+    display: none;
+    line-height: 30px;
+    width: 10%;
+}
+.nav-item ul li {
+    display: block;
+    background-color: #D83535;
+    padding-left: -100px;
+}
+.nav-item a {
+    display: block;
+    text-align: center;
+    padding: 29px 20px;
+    color: white;
+}
+.nav-item ul li a {
+    margin-left: -20px;
+}
+.navbar-nav a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1in #93a2ad;
+}
+.navbar-nav li:hover .sub-product {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 32px 22px;
+}
+#navbarResponsive {
+    width: 100%;
+}
+
+/*Search box */
+/* For small menu use it latter
+.wrapper{
+    position: relative;
+    top: 70px;
+    left: 430px;
+    transform: translate(-50%,-50%);
+  }
+  */
+.wrapper{
+    position: relative;
+    top: 70px;
+    left: 480px;
+    transform: translate(-50%,-50%);
+  }
+  
+  .container{
+    position: relative;
+    padding: 25px 50px;
+    bottom: 25px;
+  }
+  
+  .input{
+    width: 700px;
+    border: 2px solid #fff;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 15px;
+    color: #d2d2d2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 40px;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #d2d2d2;
+    font-family: Roboto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #d2d2d2;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #d2d2d2;
+  }
+  
+  .close-btn{
+    position: absolute;
+    top: 27px;
+    right: 80px;
+    font-size: 35px;
+    cursor: pointer;
+    color: black;
+    opacity: 0;
+    
+  }
+  
+  .close-btn.active{
+    opacity: 1;
+    animation: animate 0.5s linear;
+  }
+  
+  @keyframes animate{
+    0%{
+      transform: scale(1);
+    }
+    25%{
+      transform: scale(1.2);
+    }
+    50%{
+      transform: scale(1.5);
+    }
+    75%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  

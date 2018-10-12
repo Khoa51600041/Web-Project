@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gear Nation | Home page</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custrom boostrap, ... -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(".input").focus(function() {
+            $(".close-btn").addClass("active");
+            });
+
+            $(".input").focusout(function() {
+            $(".close-btn").removeClass("active");
+            $(this).val("");
+        });
+    </script>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid" id="header-top">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/core-img/1x/test13_1.png" alt="logo">
+            </a>
+            <!--Navigation-Toggler-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Collapsed-->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="wrapper">
+                            <div class="container">
+                                <input type="text" class="input" placeholder="Search">
+                            </div>
+                        </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item">
+                        <a href="#">KEYBOARD</a>
+                        <ul class="sub-product">
+                            <li><a href="keyboard-razer.html">Razer</a></li>
+                            <li><a href="keyboard-corsair.html">Corsair</a></li>
+                            <li><a href="keyboard-leopold">Leopold</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">MOUSE</a>
+                        <ul class="sub-product">
+                                <li><a href="mouse-razer.html">Razer</a></li>
+                                <li><a href="mouse-corsair.html">Corsair</a></li>
+                                <li><a href="mouse-logitech">Logitech</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">HEADPHONE</a>
+                        <ul class="sub-product">
+                                <li><a href="mouse-razer.html">Razer</a></li>
+                                <li><a href="mouse-corsair.html">Corsair</a></li>
+                                <li><a href="mouse-logitech">Logitech</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Image-Sliders-->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+    
+    </div>
+</body>
+</html>
