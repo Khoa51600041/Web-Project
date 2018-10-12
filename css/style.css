@@ -14,6 +14,9 @@ html, body {
 .navbar {
     width: 100%;   
 }
+.navbar-nav {
+    float: right;
+}
 .nav-item {
     list-style-type: none;
     margin: 0;
@@ -59,23 +62,10 @@ html, body {
 }
 
 /*Search box */
-/* For small menu use it latter
-.wrapper{
-    position: relative;
-    top: 70px;
-    left: 430px;
-    transform: translate(-50%,-50%);
+.searchBox{
+    margin: auto;
   }
-  */
-.wrapper{
-    position: relative;
-    top: 70px;
-    left: 480px;
-    transform: translate(-50%,-50%);
-  }
-  
   .container{
-    position: relative;
     padding: 25px 50px;
     bottom: 25px;
   }
@@ -106,38 +96,91 @@ html, body {
   :-ms-input-placeholder { /* IE 10+ */
     color: #d2d2d2;
   }
+
+
+
+  /*Responsive*/
   
-  .close-btn{
-    position: absolute;
-    top: 27px;
-    right: 80px;
-    font-size: 35px;
-    cursor: pointer;
-    color: black;
-    opacity: 0;
-    
+  @media (max-width: 1600px) {
+      .input {
+          width: 500px;
+      }
   }
-  
-  .close-btn.active{
-    opacity: 1;
-    animation: animate 0.5s linear;
+
+  @media (max-width: 1440px) {
+      .input {
+          width: 350px;
+      }
   }
-  
-  @keyframes animate{
-    0%{
-      transform: scale(1);
+
+  @media (max-width: 1280px) {
+      .input {
+          width: 250px;
+      }
+  }
+
+  @media (max-width: 1024px) {
+      .navbar-brand img{
+          width: 200px;
+      }
+      .input {
+          width: 250px;
+          height: 20px;
+          font-size: 10px;
+          margin-left: -30px;
+      }
+      .nav-item {
+          font-size: 15px;
+          margin-left: -10px;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand img {
+          width: 150px;
+          height: 60px;
+      }
+    .input {
+        width: 140px;
+        font-size: 10px;
+        margin-left: -30px;
     }
-    25%{
-      transform: scale(1.2);
-    }
-    50%{
-      transform: scale(1.5);
-    }
-    75%{
-      transform: scale(1.2);
-    }
-    100%{
-      transform: scale(1);
+    .container{
+        padding: 0px;
+        bottom: 5px;
+      }
+    .nav-item {
+        font-size: 11px;
+        margin-left: -10px;
     }
   }
-  
+
+  /*Phone*/
+  @media (max-width: 425px) {
+      .navbar-brand img {
+          width: 200px;
+          margin-left: 5px;
+      }
+      .input {
+          width: 100%;
+          margin-left: 1px;
+          margin-top: 5px;
+      }
+      .navbar-nav {
+          margin-right: 120px;
+      }
+      .nav-item {
+        font-size: 18px;
+        line-height: 8px;
+      }
+  }
+@media (max-width: 375px) {
+    .navbar-nav {
+        margin-right: 95px;
+    }
+}
+  @media (max-width: 320px) {
+      .navbar-nav {
+          margin-right: 50px;
+      }
+  }
