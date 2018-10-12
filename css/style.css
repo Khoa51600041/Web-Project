@@ -4,10 +4,9 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: lightgrey;
 }
 
-/* Nav-menu */
+/********** Nav-menu **********/
 #header-top {
     background-color: #D83535;
 }
@@ -97,13 +96,99 @@ html, body {
     color: #d2d2d2;
   }
 
+/********** Image-Slider **********/
+.carousel-inner img {
+    height: 90%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%)
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
 
 
-  /*Responsive*/
-  
+/********** Inner **********/
+#rowProduct .col-lg-3 {
+    margin: 4.1%;
+    padding: -50%;
+}
+#card-title-gear {
+    font-size: 30px;
+}
+/********** Team Image **********/
+.my-4 {
+    width: 83%;
+}
+.col-sm-4 {
+    margin: auto;
+    padding: -15px;
+    font-size: 20px;
+}
+/********** Social **********/
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #00aced;
+}
+.fa-instagram {
+    color: #517fa4;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+    color: #d5d5d5;
+}
+
+/********** Footer **********/
+#footer_1 {
+    background-color: #0F67B7;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.footer a {
+    color: #d5d5d5;
+}
+#footer_1 img {
+    margin-left: 56px;
+}
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.last-col {
+    width: 60%;
+    margin-left: 90px;
+}
+
+
+
+  /********** Responsive **********/
   @media (max-width: 1600px) {
       .input {
           width: 500px;
+      }
+      #text-form::placeholder {
+          font-size: 13px;
       }
   }
 
@@ -111,12 +196,18 @@ html, body {
       .input {
           width: 350px;
       }
+      #text-form::placeholder {
+        font-size: 11px;
+    }
   }
 
   @media (max-width: 1280px) {
       .input {
           width: 250px;
       }
+      #text-form::placeholder {
+        font-size: 9px;
+    }
   }
 
   @media (max-width: 1024px) {
