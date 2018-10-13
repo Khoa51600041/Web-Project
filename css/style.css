@@ -194,6 +194,10 @@ hr.light-100 {
       #footer-img {
         margin-left: 46px;
     }
+    .last-col {
+        width: 60%;
+        margin-left: 70px;
+    }
   }
 
   @media (max-width: 1440px) {
